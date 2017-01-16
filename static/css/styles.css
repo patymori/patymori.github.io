@@ -1,0 +1,104 @@
+* {
+  border: 1px black dotted;
+}
+
+body, html{
+  height: 100%;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .tecnologias{
+    height:100%;
+  }
+  a.logo{
+    font-size:25px;
+  }
+  .banner h1{
+    font-size:50px;
+  }
+  .banner h2{
+    font-size:25px;
+  }
+  .contactform{
+    width:600px;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tecnologias{
+    height:100%;
+  }
+  a.logo{
+    font-size:25px;
+  }
+  .banner h1{
+    font-size:50px;
+  }
+  .contactform{
+    width:400px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contactform{
+    width:600px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .contactform{
+    width:500px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .contactform{
+    width:300px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+  font-family: Courier, monospace;
+}
+
+.transp {
+  background-color: black !important;
+  background: transparent;
+  border-color: transparent !important;
+}
+
+.menu {
+  font-size: large;
+}
+
+.head{
+  background-color: #000000;
+  margin-top: 60px;
+}
+
+.sects{
+  height:100%
+}
+
+.center{
+  text-align: center;
+}
+
+.vcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner{
+  background:url("../images/header.png") center no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  padding: 140px 0px;
+  margin: 10px;
+}
