@@ -8,13 +8,28 @@ body, html{
     height:100%;
   }
   a.logo{
-    font-size:25px;
+    font-size:1.625em;
+  }
+  .menu {
+    font-size:1.25em;
+  }
+  .sects{
+    height:90%;
+    padding-top: 50px;
+  }
+  .banner{
+    border: 3em solid transparent;
+    margin: -150px 0px;
+    padding: 100px 0px;
   }
   .banner h1{
-    font-size:50px;
+    font-size: 4em;
   }
   .banner h2{
-    font-size:25px;
+    font-size:2em;
+  }
+  .about p{
+    font-size: 1.25em;
   }
   .contactform{
     width:600px;
@@ -27,10 +42,24 @@ body, html{
     height:100%;
   }
   a.logo{
-    font-size:25px;
+    font-size:1.625em;
+  }
+  .menu {
+    font-size:1.25em;
+  }
+  .sects{
+    height:70%
+  }
+  .banner{
+    border: 48px solid transparent;
+    margin: -150px 0px;
+    padding: 100px 0px;
   }
   .banner h1{
     font-size:50px;
+  }
+  .about p{
+    font-size: 18px;
   }
   .contactform{
     width:400px;
@@ -39,6 +68,17 @@ body, html{
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .menu {
+    font-size:1em;
+  }
+  .sects{
+    height:45%
+  }
+  .banner{
+    border: 30px solid transparent;
+    margin: -150px 0px;
+    padding: 100px 0px;
+  }
   .contactform{
     width:600px;
   }
@@ -46,6 +86,17 @@ body, html{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .menu {
+    font-size:1em;
+  }
+  .sects{
+    height:85%
+  }
+  .banner{
+    border: 20px solid transparent;
+    margin: -100px 0px;
+    padding: 30px 80px;
+  }
   .contactform{
     width:500px;
   }
@@ -53,6 +104,17 @@ body, html{
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .menu {
+    font-size:1em;
+  }
+  .sects{
+    height:75%
+  }
+  .banner{
+    border: 20px solid transparent;
+    margin: -150px 0px;
+    padding: 50px 0px;
+  }
   .contactform{
     width:300px;
   }
@@ -68,17 +130,8 @@ h1,h2,h3,h4,h5,h6,p,a {
   border-color: transparent !important;
 }
 
-.menu {
-  font-size: large;
-}
-
 .head{
   background-color: #000000;
-  margin-top: 60px;
-}
-
-.sects{
-  height:100%
 }
 
 .center{
@@ -92,13 +145,62 @@ h1,h2,h3,h4,h5,h6,p,a {
 }
 
 .banner{
-  background:url("../images/header.png") center no-repeat;
-  background-size: cover;
   color: #FFFFFF;
-  padding: 140px 0px;
-  margin: 10px;
+  -webkit-border-image: url("../images/header.png") 30 round; /* Safari 3.1-5 */
+  -o-border-image: url("../images/header.png") 30 round; /* Opera 11-12.1 */
+  border-image: url("../images/header.png") 30 round;
 }
 
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  width: 200px;
+  background: #414141;
+  border: 3px solid #212121;
+  color: #ededed;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before, .timeline li:after {
+  content: " ";
+  display: table;
+}
+
+
+/* Contact Information */
 .fa-circle{
   color: #000000;
 }

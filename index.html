@@ -11,6 +11,7 @@
 
   <script type="text/javascript" src="static/js/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="static/js/functions.js"></script>
   <title>Paty Morimoto</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
       </div>
       <div class="collapse navbar-collapse headerclpse">
         <ul class="nav navbar-nav navbar-right menu">
-          <li class="center"><a href="#sobre" class="scrollto"># Quem Sou</a></li>
+          <li class="center"><a href="#sobre" class="scrollto"># Apresentação</a></li>
           <li class="center"><a href="#timeline" class="scrollto"># Timeline</a></li>
           <li class="center"><a href="#contato" class="scrollto"># Contato</a></li>
         </ul>
@@ -33,25 +34,27 @@
   </nav>
 
   <!-- BANNER -->
-  <header id="head" class="head vcenter">
+  <header id="head" class="head sects vcenter">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 center banner">
           <h1>PATY MORIMOTO</h1>
-          <h2>Analista de Sistemas - Desenvolvedora</h2>
+          <h2>Analista Desenvolvedora</h2>
         </div>
       </div>
     </div>
   </header>
 
   <!-- SOBRE -->
-  <section id="sobre">
+  <section id="sobre" class="sects">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 center">
-          <h1><span>def</span> QuemSou:</h1>
-          <article class="">
-            <p>Analista de Sistemas e desenvolvedora com mais de 10 anos de experiência, procuro novos desafios profissionais
+        <div class="col-lg-12">
+          <header class="page-header">
+            <h1><span>def</span> apresentação(self):</h1>
+          </header>
+          <article class="about">
+            <p>Analista e desenvolvedora com mais de 10 anos de experiência, procuro novos desafios profissionais
             em projetos inovadores, com a possibilidade de adquirir mais conhecimento e compartilhar experiências.</p>
           </article>
         </div>
@@ -60,9 +63,20 @@
   </section>
 
   <!-- TIMELINE -->
-  <section id="timeline">
+  <section id="timeline" class="sects">
     <div class="container">
       <div class="row">
+        <div class="col-lg-12 center">
+          <header class="page-header center">
+            <h1># Timeline</h1>
+          </header>
+
+          <ul class="timeline">
+            <li>2017</li>
+            <li>2016</li>
+            <li>2015</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -72,8 +86,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 center">
-          <h1>PatyMorimoto.connect()</h1>
+          <header class="page-header">
+            <h1>PatyMorimoto.connect()</h1>
+          </header>
         </div>
+      </div>
+      <div class="row">
         <div class="col-lg-6">
           <ul>
             <li>
@@ -89,28 +107,28 @@
               <span>@Patymori</span>
             </li>
           </ul>
+        </div>
+        <div class="col-lg-6 center">
+          <span class="fa-stack fa-2x">
+            <a href="https://facebook.com/patriciamorimoto">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x fa-inverse" title="Facebook"></i>
+            </a>
+          </span>
+          <span class="fa-stack fa-2x">
+            <a href="https://linkedin.com/in/patriciamorimoto">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse" title="Linkedin"></i>
+            </a>
+          </span>
+          <span class="fa-stack fa-2x">
+            <a href="https://github.com/patymori/">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse" title="GitHub"></i>
+            </a>
+          </span>
+        </div>
       </div>
-      <div class="col-lg-6 center">
-        <span class="fa-stack fa-2x">
-          <a href="https://facebook.com/patriciamorimoto">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse" title="Facebook"></i>
-          </a>
-        </span>
-        <span class="fa-stack fa-2x">
-          <a href="https://linkedin.com/in/patriciamorimoto">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse" title="Linkedin"></i>
-          </a>
-        </span>
-        <span class="fa-stack fa-2x">
-          <a href="https://github.com/patymori/">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse" title="GitHub"></i>
-          </a>
-        </span>
-      </div>
-    </div>
     </div>
   </section>
 
